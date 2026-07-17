@@ -121,6 +121,9 @@ private enum TransmitterSessionStatus {
         let total = end.timeIntervalSince(start)
         guard total > 0 else { return nil }
 
+        // Hide session ring until the final 48 h
+        guard end.timeIntervalSinceNow < 48 * 60 * 60 else { return nil }
+
         let elapsed = Date().timeIntervalSince(start)
         let fraction = max(0, min(1, elapsed / total))
         let progressState: DeviceLifecycleProgressState
