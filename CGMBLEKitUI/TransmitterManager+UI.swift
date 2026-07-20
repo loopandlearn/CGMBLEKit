@@ -102,9 +102,9 @@ private enum TransmitterSessionStatus {
         guard let glucose, let start = glucose.sessionStartDate else { return nil }
 
         // During warmup the session expiry is over a week out — using it as the
-        // ring's denominator would render ~0% and feel broken. Switch the
-        // ring's denominator to the actual warmup window (50 min for Anubis,
-        // 2 h for stock) so the arc visibly fills as warmup completes.
+        // lifecycle's denominator would render ~0% and feel broken. Switch the
+        // lifecycle's denominator to the actual warmup window (50 min for Anubis,
+        // 2 h for stock) so the lifecycle visibly fills as warmup completes.
         if case .known(.warmup) = glucose.state {
             let elapsed = Date().timeIntervalSince(start)
             let warmupDuration = isAnubis ? anubisWarmupDuration : standardWarmupDuration
@@ -121,7 +121,7 @@ private enum TransmitterSessionStatus {
         let total = end.timeIntervalSince(start)
         guard total > 0 else { return nil }
 
-        // Hide session ring until the final 48 h
+        // Hide lifecycle countdown until the final 48 h
         guard end.timeIntervalSinceNow < 48 * 60 * 60 else { return nil }
 
         let elapsed = Date().timeIntervalSince(start)
