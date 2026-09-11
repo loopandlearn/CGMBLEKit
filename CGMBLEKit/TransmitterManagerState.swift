@@ -14,6 +14,15 @@ public struct TransmitterManagerState: RawRepresentable, Equatable {
 
     public static let version = 1
 
+    public static let defaultSensorLifeDays = 10
+
+    /// Selectable session lengths for Anubis-modded transmitters.
+    public static let sensorLifeDaysRange = 10...60
+
+    static func clampedSensorLifeDays(_ days: Int) -> Int {
+        return min(max(days, sensorLifeDaysRange.lowerBound), sensorLifeDaysRange.upperBound)
+    }
+
     public var transmitterID: String
 
     public var passiveModeEnabled: Bool = true

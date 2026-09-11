@@ -81,6 +81,8 @@ public class TransmitterManager: TransmitterDelegate {
 
         self.transmitter.delegate = self
         
+        self.transmitter.needsExpiryRead = state.transmitterExpiryInDays == nil
+
         #if targetEnvironment(simulator)
         setupSimulatedSampleGenerator()
         #endif
@@ -270,6 +272,9 @@ public class TransmitterManager: TransmitterDelegate {
             "latestConnection: \(String(describing: latestConnection))",
             "dataIsFresh: \(dataIsFresh)",
             "providesBLEHeartbeat: \(providesBLEHeartbeat)",
+            "transmitterExpiryInDays: \(String(describing: state.transmitterExpiryInDays))",
+            "isAnubis: \(isAnubis)",
+            "sensorLifeDays: \(state.sensorLifeDays)",
             shareManager.debugDescription,
             "observers.count: \(observers.cleanupDeallocatedElements().count)",
             String(reflecting: transmitter),
@@ -310,6 +315,9 @@ public class TransmitterManager: TransmitterDelegate {
     }
 
     public func transmitter(_ transmitter: Transmitter, didRead glucose: Glucose) {
+        var glucose = glucose
+        glucose.sessionExpDate = glucose.sessionStartDate?.addingTimeInterval(state.sensorLife)
+
         guard glucose != latestReading else {
             updateDelegate(with: .noData)
             return
@@ -341,8 +349,8 @@ public class TransmitterManager: TransmitterDelegate {
                     date: sessionStartDate,
                     type: .sensorStart,
                     deviceIdentifier: transmitter.ID,
-                    expectedLifetime: .hours(24 * 10),
-                    warmupPeriod: .hours(2)
+                    expectedLifetime: state.sensorLife,
+                    warmupPeriod: state.isAnubis ? .minutes(50) : .hours(2)
                 ))
             } else {
                 log.error("Ignoring sensor start event with invalid session start time: %{public}@", String(describing: glucose))

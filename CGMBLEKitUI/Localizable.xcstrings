@@ -59,12 +59,6 @@
             "value" : "%@/דקה"
           }
         },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@/मिनट"
-          }
-        },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
@@ -168,6 +162,9 @@
           }
         }
       }
+    },
+    "%d days" : {
+      "comment" : "The format string for a sensor life option in days (1: number of days)"
     },
     "Are you sure you want to delete this CGM?" : {
       "comment" : "Confirmation message for deleting a CGM",
@@ -277,7 +274,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunteți sigur că doriți să ștergeți acest CGM?"
+            "value" : "Sunteți sigur că doriți să ștergeți acest senzor de glicemie?"
           }
         },
         "ru" : {
@@ -415,12 +412,6 @@
             "value" : "לא"
           }
         },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "निरस्त"
-          }
-        },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
@@ -478,7 +469,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Renunță"
+            "value" : "Anulați"
           }
         },
         "ru" : {
@@ -788,7 +779,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ștergeți CGM"
+            "value" : "Ștergeți senzorul de glicemie"
           }
         },
         "ru" : {
@@ -890,12 +881,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "גלוקוז"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "शुगर"
           }
         },
         "hu" : {
@@ -1724,7 +1709,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Deschide aplicația"
+            "value" : "Deschideți aplicația"
           }
         },
         "ru" : {
@@ -1919,6 +1904,9 @@
           }
         }
       }
+    },
+    "Sensor expiration, including the countdown on the home screen, is calculated from the session start using this value." : {
+      "comment" : "The footer text for the sensor life picker"
     },
     "Sensor Expired" : {
       "comment" : "Sensor expired status\nTitle describing past sensor sensor expiration",
@@ -2602,6 +2590,9 @@
         }
       }
     },
+    "This transmitter is Anubis-modified and supports extended sensor sessions. Set how long a sensor lasts before it is considered expired." : {
+      "comment" : "The footer text for the sensor life setting"
+    },
     "Transmitter Age" : {
       "comment" : "Title describing transmitter session age",
       "localizations" : {
@@ -2963,12 +2954,6 @@
             "value" : "מגמה"
           }
         },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ट्रेंड"
-          }
-        },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3122,12 +3107,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "העלה נתונים"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "अपलोड रीडिंग्स"
           }
         },
         "hu" : {
