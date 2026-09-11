@@ -332,6 +332,12 @@
             "state" : "translated",
             "value" : "Calibration Error"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalibratiefout"
+          }
         }
       }
     },
@@ -342,6 +348,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Calibration Needed"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalibratie nodig"
           }
         }
       }
@@ -1229,7 +1241,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laatste Kalibratie"
+            "value" : "Laatste kalibratie"
           }
         },
         "pl" : {
@@ -1378,7 +1390,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laatste Verbinding"
+            "value" : "Laatste verbinding"
           }
         },
         "pl" : {
@@ -1533,7 +1545,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laatste Meting"
+            "value" : "Laatste meting"
           }
         },
         "pl" : {
@@ -1688,7 +1700,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Open App"
+            "value" : "Open app"
           }
         },
         "pl" : {
@@ -1837,7 +1849,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Remote Gegevenssynchronisatie"
+            "value" : "Remote gegevenssynchronisatie"
           }
         },
         "pl" : {
@@ -1986,7 +1998,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sensor Verlopen"
+            "value" : "Sensor verlopen"
           }
         },
         "pl" : {
@@ -2135,7 +2147,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sensor Verloopt"
+            "value" : "Sensor verloopt"
           }
         },
         "pl" : {
@@ -2214,6 +2226,12 @@
             "state" : "translated",
             "value" : "Sensor Failed"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor mislukt"
+          }
         }
       }
     },
@@ -2224,6 +2242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sensor Stopped"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor gestopt"
           }
         }
       }
@@ -2391,6 +2415,12 @@
             "state" : "translated",
             "value" : "Session Failed"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sessie mislukt"
+          }
         }
       }
     },
@@ -2401,6 +2431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Signal Problem"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signaalprobleem"
           }
         }
       }
@@ -3121,7 +3157,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Upload Metingen"
+            "value" : "Upload metingen"
           }
         },
         "pl" : {
@@ -3199,6 +3235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warming Up"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aan het opwarmen"
           }
         }
       }
