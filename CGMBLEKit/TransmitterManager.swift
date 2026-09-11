@@ -443,43 +443,14 @@ public class TransmitterManager: TransmitterDelegate {
     public func transmitter(_ transmitter: Transmitter, didReadTransmitterVersion message: TransmitterVersionRxMessage) {
         log.default("Transmitter reports expiry of %d days (isAnubis=%@)",
                     message.transmitterExpiryInDays, String(describing: message.isAnubis))
-        logDeviceCommunication("Transmitter version: expiry \(message.transmitterExpiryInDays) days", type: .receive)
-        transmitter.needsExpiryRead = false
         mutateState { state in
             state.transmitterExpiryInDays = message.transmitterExpiryInDays
         }
-        updateLatestReadingSessionExpDate()
     }
 
     /// `true` once the transmitter has reported the Anubis 180-day lifetime.
     public var isAnubis: Bool {
         return state.isAnubis
-    }
-
-    /// User-configured session length; only honored for Anubis (see `sensorLife`).
-    public var sensorLifeDays: Int {
-        get {
-            return state.sensorLifeDays
-        }
-        set {
-            mutateState { state in
-                state.sensorLifeDays = TransmitterManagerState.clampedSensorLifeDays(newValue)
-            }
-            updateLatestReadingSessionExpDate()
-        }
-    }
-
-    public var sensorLife: TimeInterval {
-        return state.sensorLife
-    }
-
-    /// Re-stamps the cached reading so a sensor-life change applies immediately.
-    private func updateLatestReadingSessionExpDate() {
-        guard var reading = latestReading else {
-            return
-        }
-        reading.sessionExpDate = reading.sessionStartDate?.addingTimeInterval(state.sensorLife)
-        latestReading = reading
     }
 }
 

@@ -16,6 +16,12 @@
             "value" : "Möchtest Du das CGM wirklich löschen?"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to reset this transmitter?"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -147,6 +153,12 @@
             "value" : "Abbrechen"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -264,6 +276,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der Vorgang kann bis zu 10 Minuten dauern."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It will take up to 10 minutes to complete."
           }
         },
         "es" : {
@@ -385,6 +403,12 @@
             "value" : "Zurücksetzen"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -502,6 +526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zurücksetzen des Transmitters abgeschlossen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transmitter Reset Complete"
           }
         },
         "es" : {
