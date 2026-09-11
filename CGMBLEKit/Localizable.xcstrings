@@ -22,6 +22,12 @@
             "value" : "Dexcom G5"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dexcom G5"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -166,6 +172,12 @@
           }
         },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dexcom G6"
+          }
+        },
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dexcom G6"
@@ -324,6 +336,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blutzuckerdaten sind nicht verfügbar"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glucose data is unavailable"
           }
         },
         "es" : {
@@ -487,6 +505,12 @@
             "value" : "Batterie niedrig"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Battery"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -642,6 +666,12 @@
             "value" : "OK"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -789,6 +819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Peripheriebefehl war ungültig"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peripheral command was invalid"
           }
         },
         "es" : {
@@ -940,6 +976,12 @@
             "value" : "Peripherie antwortet nicht rechtzeitig"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peripheral did not respond in time"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1089,6 +1131,12 @@
             "value" : "Gerät ist nicht verbunden"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peripheral isnʼt connected"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1236,6 +1284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sensorkalibrierung ist OK"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor calibration is OK"
           }
         },
         "es" : {
@@ -1393,6 +1447,12 @@
             "value" : "Sensor befindet sich in unbekanntem Zustand %1$d"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor is in unknown state %1$d"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1546,6 +1606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sensor ist gestoppt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor is stopped"
           }
         },
         "es" : {
@@ -1709,6 +1775,12 @@
             "value" : "Sensor befindet sich in der Aufwärmphase"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor is warming up"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1864,6 +1936,12 @@
             "value" : "Sensor benötigt Kalibrierung"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensor needs calibration"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2011,6 +2089,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unbekannte Charakteristik"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown characteristic"
           }
         },
         "es" : {
